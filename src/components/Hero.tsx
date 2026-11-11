@@ -33,28 +33,13 @@ export const Hero: React.FC = () => {
     <section id="home" className="hero" aria-label="Hotel Rajmahal Hero">
       <div className="hero__media" ref={mediaRef}>
         <picture>
-          <source
-            media="(max-width: 767px)"
-            srcSet="/images/hotel/hero-mobile.avif"
-            type="image/avif"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcSet="/images/hotel/hero-mobile.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcSet="/images/hotel/hero-mobile.jpg"
-            type="image/jpeg"
-          />
           <source srcSet="/images/hotel/hero-desktop.avif" type="image/avif" />
           <source srcSet="/images/hotel/hero-desktop.webp" type="image/webp" />
           <img
             src="/images/hotel/hero-desktop.jpg"
             alt="Hotel Rajmahal by Vilasa Group illuminated Rajasthani heritage facade in Nathdwara at night"
             loading="eager"
-            decoding="async"
+            decoding="sync"
             fetchPriority="high"
           />
         </picture>
