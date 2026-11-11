@@ -1,0 +1,94 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 4.75rem);
+  align-items: start;
+}
+
+.contact-grid > * {
+  min-width: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-ledger {
+  border-top: var(--border-sand);
+}
+
+.contact-row {
+  padding: 1.15rem 0;
+  border-bottom: var(--border-sand);
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.contact-row__label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+}
+
+.contact-row__value {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+}
+
+.contact-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  transition: color 0.25s ease;
+}
+
+.contact-link:hover {
+  color: var(--color-gold-dark);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.contact-map-frame {
+  border: var(--border-sand);
+  background-color: var(--color-beige);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.contact-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .contact-grid {
+    grid-template-columns: 0.92fr 1.08fr;
+  }
+}

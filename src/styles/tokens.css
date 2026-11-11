@@ -1,0 +1,38 @@
+:root {
+  /* Heritage Colour Palette */
+  --color-ivory: #F6F1E8;
+  --color-ivory-deep: #EFE8DC;
+  --color-beige: #E8DFD1;
+  --color-sand: #D8C5A6;
+  --color-gold: #B99A62;
+  --color-gold-dark: #9B7D48;
+  --color-charcoal: #211E1A;
+  --color-charcoal-soft: #3D3831;
+  --color-muted-ink: #5A5349;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Editorial Spacing & Layout */
+  --container-max: 1320px;
+  --container-narrow: 1080px;
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --section-py: clamp(4.75rem, 8.5vw, 8.5rem);
+
+  /* Crisp Architectural Radii */
+  --radius-none: 0px;
+  --radius-hairline: 2px;
+
+  /* Refined Transitions */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 0.75s var(--ease-editorial);
+  --transition-base: 0.4s var(--ease-editorial);
+  --transition-fast: 0.25s ease;
+
+  /* Hairlines */
+  --border-sand: 1px solid rgba(216, 197, 166, 0.75);
+  --border-charcoal-subtle: 1px solid rgba(33, 30, 26, 0.14);
+  --border-gold-subtle: 1px solid rgba(185, 154, 98, 0.45);
+}
